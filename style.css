@@ -1,0 +1,152 @@
+
+/* Body é a tag do html que agora carrega um estilo */
+body {
+    /* Remove toda margin atribuida do HTML */
+    margin: 0;
+    /*Obrigada tudo a ficar no centro do site */
+    justify-content: center;
+    /* determina a fonte do texto*/
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    /* determina a cor do fundo da página*/
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background-color:#e499c5;
+    color:#f0ffff;
+    /* Determina a posição do texto dentro de uma caixa*/
+    text-align: center;
+    padding: 15px 0;
+}
+
+/*Ajuste dos espaços no cabeçalho*/
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/*Parte principal do Body*/
+main {
+    /*Obriga os elementos a ter este tamanho*/
+    max-width: 1000px;
+    margin:30px auto;
+    /* Determina os espaços Externos dos elementos*/
+    padding: 15px;
+}
+
+/* Carrega um estilo do css*/
+
+h2 {
+    text-align: center;
+}
+/* Elementos dos produtos*/
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Bloco de estilo representa os estilos de div*/
+.produto {
+    background-color: #ffffff;
+   width: 260px ;
+   padding: 13px;
+   text-align: center;
+   border-radius: 8px;
+
+   /*adicione estas linhas aqui dentro*/
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*E adicione este novo bloco logo abaixo do .produto: */
+.produto:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0, 0.1);
+}
+.produto img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+/* Este elemento representa o estilo do botão*/
+button {
+    background-color: #e499c5;
+    color: #ffffff;
+    /* O border remove toda a formatação herdada pelo html*/
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Este elemento aplica o efeito de hover no botão.*/
+button:hover {
+    background-color: #eba7cf;
+    transform: scale (1.05);
+}
+
+/*Este elemento formata o bloco de compra*/
+.compra {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 35px auto;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #f8bfdd;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Esiliza as caixas de texto e número */
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 18px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* fica com a borda rosa quando clica para digitar*/
+input focus {
+    border-color: #e499c5;
+
+}
+
+.resultado {
+    margin-top: 20px;
+    border-top: 1px solid #e499;
+    padding-top: 10px;
+}
+
+#total {
+    color:#d382b1;
+}
+
+#carrinhoLista {
+    text-align: left;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #fff0f3;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+footer {
+    background-color: #e499c5;
+    color:#ffffff;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}

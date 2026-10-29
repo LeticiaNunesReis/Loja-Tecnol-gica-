@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content="width=device,width, initial-scale=1.0">
+    <title> Brasa store </title>
+    <!--CONECTA COM CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--CONECTA COM O JS-->
+    <script src="script1.JS" defer></script>
+    
+</head>
+<body>
+    
+    <header>
+        <h1> Brasa store</h1>
+        <p> Tecnologia para o seu dia a dia! </p>
+    </header>
+
+    <main>
+        <h2> Nossos produtos</h2>
+        <!-- Espaço dos Produtos-->
+        <section class= "produtos">
+            <!-- Produto 1-->
+            <div class="produto">
+                <img src="assets/img/fone-01.jpg" alt="Fone de ouvido">
+                <h3> Fone de ouvido </h3>
+                <p> R$ 100,00</p>
+                <button id="fone"> Selecionar produto</button>
+            </div>
+            <!--Produto 2-->
+            <div class="produto">
+                <img src="assets/img/teclado-01.jpg" alt="Teclado">
+                <h3>Teclado</h3>
+                <p> R$ 150,00</p>
+                <button id="teclado"> Selecionar produto</button>
+            </div>
+            <!--Produto 3-->
+            <div class="produto">
+                <img src="assets/img/mouse-01.jpg" alt="Mouse">
+                <h3> Mouse</h3>
+                <p> R$ 80,00</p>
+                <!-- O id aqui está trazendo alguma ação do JS-->
+                <button id="mouse"> Selecionar produto</button>
+            </div>
+            <!--Produto 4-->
+            <div class="produto">
+                <img src="assets/img/monitor-01.jpg" alt="Monitor">
+                <h3> Monitor </h3>
+                <p> R$ 750,00</p>
+                <button id="monitor"> Selecionar produto</button>
+            </div>
+            <!--Produto 5-->
+            <div class="produto">
+                <img src="assets/img/mousepad-01.jpg" alt="Mousepad">
+                <h3> Mousepad </h3>
+                <p> R$ 40,00</p>
+                <button id="mousepad"> Selecionar produto</button>
+            </div>
+            <!--Produto 6-->
+            <div class="produto">
+                <img src="assets/img/gabinete-01.jpg" alt="Gabinete">
+                <h3> Gabinete </h3>
+                <p> R$ 2.500,00</p>
+                <button id="gabinete"> Selecionar produto</button>
+            </div>
+            <!--Produto 7-->
+            <div class="produto">
+                <img src="assets/img/memoriaram-01.jpg" alt="Memória Ram">
+                <h3> Memória Ram </h3>
+                <p> R$ 250,00</p>
+                <button id="memoriaram"> Selecionar produto</button>
+            </div>
+            <!--Produto 8-->
+            <div class="produto">
+                <img src="assets/img/ssd-01.jpg" alt="SSD">
+                <h3> SSD </h3>
+                <p> R$ 300,00</p>
+                <button id="ssd"> Selecionar produto</button>
+            </div>
+            <!--Produto 9-->
+            <div class="produto">
+                <img src="assets/img/cpu-01.jpg" alt="Cpu">
+                <h3> Cpu </h3>
+                <p> R$ 1.200,00</p>
+                <button id="cpu"> Selecionar produto</button>
+            </div>
+             <!--Produto 10-->
+            <div class="produto">
+                <img src="assets/img/actionfigure-01.jpg" alt="action figure1">
+                <h3> Poppy The Angel Action Figure </h3>
+                <p> R$ 220,00</p>
+                <button id="actionfigure-01"> Selecionar produto</button>
+            </div>
+             <!--Produto 11-->
+            <div class="produto">
+                <img src="assets/img/actionfigure-02.jpg" alt="action figure2">
+                <h3> Poppy The Beauty Action Figure </h3>
+                <p> R$ 200,00</p>
+                <button id="actionfigure-02"> Selecionar produto</button>
+            </div>
+             <!--Produto 12-->
+            <div class="produto">
+                <img src="assets/img/actionfigure-03.jpg" alt="action figure3">
+                <h3> Poppy Daisy Action Figure </h3>
+                <p> R$ 190,00</p>
+                <button id="actionfigure-03"> Selecionar produto</button>
+            </div>
+            </section>
+            <!-- Local de compra-->
+            <section class="compra">
+                <h2> Calcule sua compra </h2>
+                <p>Produto selecionado: <strong id="produto-selecionado"></strong></p>
+                <label for="quantidade">Quantidade:</label>
+                <input 
+                    type="number" 
+                    id="quantidade" 
+                    min="1" 
+                    value="1">
+                <label for="cupom">Cupom de desconto:</label>
+                <input type="text" id="cupom" placeholder="Digite BRASA10">
+                <button id="calcular">Calcular compra</button>
+                <div class="resultado">
+                    <p>Subtotal: <span id="subtotal">R$ 0,00</span></p>
+                    <P>Desconto: <span id="desconto">R$ 0,00</span></P>
+                    <h3>Total: <span id="total">R$ 0,00</span></h3>
+                    <p id="mensagem"></p>
+                    <input type="text" id="nomeProduto" placeholder="Digite o produto">
+                    <button onclick="adicionarProduto()">Adicionar ao Carrinho</button>
+                    <div id="carrinhoLista"></div>
+                </div>
+            </section>
+    </main>
+    <!-- Rodapé-->
+    <footer>
+        <p>Brasa Store © 2026 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
